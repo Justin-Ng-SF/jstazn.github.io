@@ -242,6 +242,12 @@ body {
 
 }
 
+.carousel-control{
+  width: 5%;
+
+
+}
+
 .carousel-indicators{
   bottom: -10%;
 
@@ -255,8 +261,24 @@ body {
 
 .carousel-inner {
 
-  width: 100%;
+  width: 80%;
   height: 100%;
+  
+
+  /* margin: 0 auto; */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+/* 
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+
 
 
 }
@@ -305,6 +327,11 @@ body {
 .carousel-item-description{
   position: relative;
   color: white
+
+}
+.carousel-item-description-text{
+  text-align: center;
+
 
 }
 
