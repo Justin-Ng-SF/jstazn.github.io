@@ -2,7 +2,9 @@ $(function () {
     var $header = $(".landing-message");
     var header = [
         'Hello there.',
-        'My name is <br>Justin Ng'
+        'My name is <br>Justin Ng.',
+        'Below are the projects I have built and a little bit about me.',
+        'Please feel free to check out my projects on Github.'
     
     ];
     var position = 1;
