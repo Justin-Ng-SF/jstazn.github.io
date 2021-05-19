@@ -1,0 +1,337 @@
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 300vh;
+  overflow-x: hidden;
+  /* background-color: rgb(61, 61, 61); */
+  /* The image used */
+  background-image: url("/res/dark-background.png");
+
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ===================================================== */
+/* Section 1 landing */
+.landing {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* max-height: 675px; */
+  /* background-image: url("/res/nightbridge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.bridge-img{
+  width: 100vw;
+  height: 100vh;
+  /* max-height: 675px; */
+}
+
+.landing-message-box{
+  position: absolute;
+
+  
+
+  width: 500px;
+  height: 100px;
+
+
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+
+
+  /* z-index: 200; */
+}
+
+.landing-message{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4.5rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+/* Section 1 landing End */
+
+/* ===================================================== */
+
+/* Section 2 about me */
+.section-2{
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+}
+
+.section-2-s1{
+  position: relative; 
+  font-size: 20px;  
+}
+
+
+.profile-frame{
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+
+
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+}
+
+.self{
+  /* visibility: hidden; */
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  z-index: 10;
+}
+
+
+.section-2-s2{
+  position: relative; 
+
+}
+
+.textbox{
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+
+
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+/* Section 2 about me end */
+
+/* ===================================================== */
+
+/* Section 3 projects */
+
+.section-3{
+  position: absolute;
+  top: 200vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+.carousel-container{
+  width: 80vw;
+  height: 500px;
+
+  position: absolute;
+  margin: 0 auto;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+}
+
+.carousel-indicators{
+  bottom: -10%;
+
+
+}
+
+.carousel{
+  width: 100%;
+  height: 90%;
+}
+
+.carousel-inner {
+
+  width: 100%;
+  height: 100%;
+
+
+}
+.carousel-grid{
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+
+}
+
+
+/* Section 3  end */
+
+/* ===================================================== */
+
+/* #icons{
+
+  position: absolute;
+  top: 80%;
+  left:25%;
+} */
+.fa {
+  font-size: 24px;
+  padding: 0 10;
+  color: rgb(255, 255, 255);
+}
+
+/* ===================================================== */
+/*============Left Navv Bar================*/
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 80px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+/*============Icon snake================*/
+
+
+/*https://www.youtube.com/watch?v=Vm_te-D25D4&ab_channel=OnlineTutorials*/
+ul {
+  position: absolute;
+  bottom: 0%;
+  /* top: 90%; */
+  left: 25%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  padding: 10px 1px;
+  display: block;
+  position: relative;
+  /* width: 49px;
+  height: 49px; */
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  /* background: #ccc; */
+  text-decoration: none;
+  color: #262626;
+  margin: 0 10px;
+  transition: .5s;
+}
+ul li a span {
+  position: absolute;
+  transition: transform .5s;
+}
+/*============horizontal================*/
+ul li a span:nth-child(1),
+ul li a span:nth-child(3){
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+}
+ul li a span:nth-child(1){
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+ul li a:hover span:nth-child(1){
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s;
+}
+
+ul li a span:nth-child(3){
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+ul li a:hover span:nth-child(3){
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+/*============vertical================*/
+
+ul li a span:nth-child(2),
+ul li a span:nth-child(4){
+  width: 1px;
+  height: 100%;
+  background: #ffffff;
+}
+ul li a span:nth-child(2){
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+ul li a:hover span:nth-child(2){
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform .5s;
+}
+
+ul li a span:nth-child(4){
+  top: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+ul li a:hover span:nth-child(4){
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform .5s;
+}
+
+
+/* #icons{
+
+  position: absolute;
+  top: 80%;
+  left:25%;
+} */
+.fa {
+  font-size: 24px;
+  padding: 0 10;
+  color: rgb(255, 255, 255);
+}
+/*=========================================*/
