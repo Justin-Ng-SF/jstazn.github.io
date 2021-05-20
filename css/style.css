@@ -108,6 +108,7 @@ body {
 
 
 .grid-item {
+  position: relative;
   height: 35vh;
   width: 35vw;
   background-color: rgba(61, 61, 61, 0.8);
@@ -118,24 +119,31 @@ body {
 }
 
 .grid-item-img{
+  position: relative;
   height: 100%;
   width: 100%;
 
 }
 
 .grid-item-description{
+  position: relative;
   display: none;
 }
 
+
 .grid-item:hover .grid-item-img{
+  position: relative;
   display: none;
 
 }
 
 .grid-item:hover .grid-item-description{
+  position: relative;
   display: block;
   color: white;
   font-size: 2rem;
+
+  
 }
 
 
@@ -211,7 +219,7 @@ body {
 /* Section 3 projects */
 
 .section-3{
-  /* position: absolute; */
+  position: relative;
 
   height: 100vh;
   width: 100vw;
@@ -326,11 +334,13 @@ body {
   transform: translate(-50%, -50%); 
 
 }
+
 .carousel-item-description{
   position: relative;
   color: white;
   background-color: rgba(61, 61, 61, 0.5);
 }
+
 .description-header{
   text-align: center;
 
@@ -350,6 +360,7 @@ body {
 
 /* Footer */
 .footer{
+  display: none;
   position: relative;
   height: 15vh;
   width: 100vw;
@@ -497,3 +508,551 @@ ul li a:hover span:nth-child(4){
   color: rgb(255, 255, 255);
 }
 /*=========================================*/
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+  .body{
+    margin: auto;
+  }
+
+  .landing-message-box{
+    height: 100px;
+    width: 100%;
+    top: 0;
+
+    top: 0;
+    left: 0;
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+
+
+  .landing-message{
+    font-size: 2rem;
+  }
+
+
+  .grid-template{
+
+    width: 100vw;
+    grid-gap:10px;
+  }
+
+  .section-3{
+    /* position: absolute; */
+  
+    height: 120vw;
+
+  }
+  
+
+  .grid-item {
+    height: 100%;
+    width: 100%;
+    max-height: 35vw;
+  }
+
+  .grid-item-description{
+    display: none;
+  }
+  
+  .grid-item:hover .grid-item-img{
+    display: none;
+  
+  }
+  
+  .grid-item:hover .grid-item-description{
+    display: block;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    z-index: 200;
+  }
+  .section-3{
+
+    height: 80vh;
+
+  }
+
+
+  .carousel-grid{
+
+  
+    display: block;
+
+  
+  }
+  
+  .carousel-img-container{
+  
+    position: relative;
+  
+  
+    height: 0%;
+    width: 0%;
+  
+  
+  }
+
+  .carousel-img{
+    display: none;
+  
+  }
+
+  .carousel-item-description{
+    font-size: 1.1rem;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 15vh;
+  }
+
+  .icon{
+    margin: auto;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .fa{
+    font-size: 35px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+    .body{
+      margin: auto;
+    }
+  
+    .landing{
+      height: 15vh;
+    }
+
+    .landing-message-box{
+      height: 50px;
+      width: 100%;
+      top: 0;
+  
+      top: 0;
+      left: 0;
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  
+    .landing-message{
+      font-size: 3rem;
+    }
+  
+  
+    .grid-template{
+  
+      width: 100vw;
+      grid-gap:15px;
+    }
+  
+    .section-3{
+      /* position: absolute; */
+    
+      height: 120vh;
+  
+    }
+    
+  
+    .grid-item {
+      height: 100%;
+      width: 100%;
+      max-height: 40vw;
+    }
+  
+    .grid-item-description{
+      display: none;
+    }
+    
+    .grid-item:hover .grid-item-img{
+      display: none;
+    
+    }
+    
+    .grid-item:hover .grid-item-description{
+      display: block;
+      color: white;
+      background-color: black;
+      font-size: 2rem;
+      z-index: 200;
+    }
+  
+    .section-3{
+
+      height: 80vh;
+
+    }
+
+
+    .carousel-grid{
+  
+    
+      display: block;
+  
+    
+    }
+    
+    .carousel-img-container{
+    
+      position: relative;
+    
+    
+      height: 0%;
+      width: 0%;
+    
+    
+    }
+  
+    .carousel-img{
+      display: none;
+    
+    }
+  
+    .carousel-item-description{
+      font-size: 1.4rem;
+    }
+  
+    .footer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 15vh;
+    }
+  
+    .icon{
+      margin: auto;
+    }
+  
+    .sidenav {
+      display: none;
+    }
+  
+    .fa{
+      font-size: 40px;
+    }
+  
+  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+  .body{
+    margin: auto;
+  }
+
+  .landing{
+    height: 15vh;
+  }
+
+  .landing-message-box{
+
+    height: 50px;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .landing-message{
+    font-size: 4rem;
+  }
+
+
+  .grid-template{
+
+    width: 100vw;
+    grid-gap:20px;
+  }
+
+  .section-3{
+    /* position: absolute; */
+  
+    height: 120vh;
+
+  }
+  
+
+  .grid-item {
+    height: 100%;
+    width: 100%;
+    max-height: 45vw;
+  }
+
+  .grid-item-description{
+    display: none;
+  }
+  
+  .grid-item:hover .grid-item-img{
+    display: none;
+  
+  }
+  
+  .grid-item:hover .grid-item-description{
+    display: block;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    z-index: 200;
+  }
+
+  .section-3{
+
+    height: 80vh;
+
+  }
+
+
+  .carousel-grid{
+
+  
+    display: block;
+
+  
+  }
+  
+  .carousel-img-container{
+  
+    position: relative;
+  
+  
+    height: 0%;
+    width: 0%;
+  
+  
+  }
+
+  .carousel-img{
+    display: none;
+  
+  }
+
+  .carousel-item-description{
+    font-size: 1.8rem;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 15vh;
+  }
+
+  .icon{
+    margin: auto;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  
+  .fa{
+    font-size: 45px;
+  }
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+  .body{
+    margin: auto;
+  }
+
+  .landing{
+    height: 15vh;
+  }
+
+  .landing-message-box{
+
+    height: 50px;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .landing-message{
+    font-size: 4rem;
+  }
+
+
+  .grid-template{
+
+    width: 80vw;
+    grid-gap:20px;
+  }
+
+  .section-3{
+    /* position: absolute; */
+  
+    height: 120vh;
+
+  }
+  
+
+  .grid-item {
+    height: 100%;
+    width: 100%;
+    max-height: 45vw;
+  }
+
+  .grid-item-description{
+    display: none;
+  }
+  
+  .grid-item:hover .grid-item-img{
+    display: none;
+  
+  }
+  
+  .grid-item:hover .grid-item-description{
+    display: block;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    z-index: 200;
+  }
+
+  .section-3{
+
+    height: 100vh;
+
+  }
+
+  .carousel-container{
+    height: 800px;
+  }
+
+  .carousel-item-description{
+    font-size: 2rem;
+  }
+  .icon{
+    margin: auto;
+  }
+
+  
+  .fa{
+    font-size: 45px;
+  }
+
+
+  .icon{
+    margin: auto;
+  }
+
+  .sidenav {
+    width: 100px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .body{
+    margin: auto;
+  }
+
+  .landing{
+    height: 15vh;
+  }
+
+  .landing-message-box{
+
+    height: 50px;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .landing-message{
+    font-size: 4rem;
+  }
+
+
+  .grid-template{
+
+    width: 80vw;
+    grid-gap:20px;
+  }
+
+  .section-3{
+    /* position: absolute; */
+  
+    height: 120vh;
+
+  }
+  
+
+  .grid-item {
+    height: 100%;
+    width: 100%;
+    max-height: 45vw;
+  }
+
+  .grid-item-description{
+    display: none;
+  }
+  
+  .grid-item:hover .grid-item-img{
+    display: none;
+  
+  }
+  
+  .grid-item:hover .grid-item-description{
+    display: block;
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    z-index: 200;
+  }
+
+  .section-3{
+
+    height: 100vh;
+
+  }
+
+  .carousel-container{
+    height: 800px;
+  }
+  .carousel-img{
+    
+
+  }
+
+  .carousel-item-description{
+    font-size: 2rem;
+  }
+  .icon{
+    margin: auto;
+  }
+
+  
+  .fa{
+    font-size: 45px;
+  }
+
+
+  .icon{
+    margin: auto;
+  }
+
+  .sidenav {
+    width: 100px;
+  }
+
+}
