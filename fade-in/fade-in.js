@@ -3,7 +3,7 @@ $(function () {
     var header = [
         'Hello there.',
         'My name is <br>Justin Ng.',
-        'Below are the projects I have built and a little bit about me.',
+        'Below are the projects I have built and <br>a little bit about me.',
         'Please feel free to check out my projects on Github.'
     
     ];
